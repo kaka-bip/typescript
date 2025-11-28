@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* === Diretórios === */
+    "rootDir": "./src",            // Pasta onde ficam seus arquivos TypeScript
+    "outDir": "./dist",            // Pasta onde o código compilado será gerado
+
+    /* === Módulos e ambiente Node === */
+    "module": "CommonJS",          // Usa CommonJS (recomendado para Node.js)
+    "target": "ES2020",            // Transpila para um JS moderno compatível
+    "lib": ["ESNext"],             // Usa recursos mais novos do JS
+    "types": ["node"],             // Importa os tipos do Node.js automaticamente
+
+    /* === Saída (arquivos gerados) === */
+    "sourceMap": true,             // Gera mapas de origem (para debug)
+    "declaration": true,           // Gera arquivos .d.ts (definições de tipo)
+    "declarationMap": true,        // Gera mapas para os .d.ts
+
+    /* === Regras de checagem === */
+    "strict": true,                // Ativa todas as verificações de tipo
+    "noImplicitAny": true,         // Exige que todos os tipos sejam declarados
+    "noImplicitThis": true,        // Impede uso incorreto de `this`
+    "alwaysStrict": true,          // Adiciona 'use strict' nos arquivos JS
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* === Compatibilidade e performance === */
+    "esModuleInterop": true,       // Permite import default de libs CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,          // Ignora conflitos de tipagem em libs externas
+
+    /* === Organização === */
+    "removeComments": false,       // Mantém comentários no JS final
+    "incremental": true            // Compila apenas o que mudou (mais rápido)
+  },
+  "include": ["src"],              // Pasta onde o TS vai procurar código
+  "exclude": ["node_modules", "dist"] // Ignora essas pastas
+}
