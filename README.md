@@ -1,2 +1,2 @@
 # typescript
-Curso de typescripy
+Curso de typerscript
